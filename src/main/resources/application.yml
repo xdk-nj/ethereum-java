@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: eth
+server:
+  port: 8888
+web3j:
+  client-address: http://localhost:7545

@@ -1,0 +1,6 @@
+web3j solidity generate
+-b E:\TruffleProject\eth\SimpleStorage.bin
+-a E:\TruffleProject\eth\SimpleStorage.abi
+-o E:\TruffleProject\eth\src\main\java -p com.xdk.eth.bytecode
+
+-b 后面跟生成的bin文件 -a 后面跟生成的abi文件 -o后面放生成的java代码的存放位置 -p后面跟包名
