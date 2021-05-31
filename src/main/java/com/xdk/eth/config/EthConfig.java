@@ -7,6 +7,8 @@ import org.springframework.context.annotation.Configuration;
 import org.web3j.protocol.Web3j;
 import org.web3j.protocol.http.HttpService;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 @Configuration
@@ -24,5 +26,12 @@ public class EthConfig {
         OkHttpClient httpClient = builder.build();
         Web3j web3j = Web3j.build(new HttpService(rpc,httpClient,false));
         return web3j;
+    }
+
+    @Bean
+    public Map<String, String> map() {
+        Map<String, String> map = new HashMap<>();
+        map.put("1", "name");
+        return map;
     }
 }
